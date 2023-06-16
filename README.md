@@ -1,11 +1,11 @@
-About r-dreamerr
-================
+About r-dreamerr-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dreamerr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=dreamerr
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dreamerr-feedstock/blob/main/LICENSE.txt)
 
 Summary: Set of tools to facilitate package development and make R a more user-friendly place. Mostly for developers (or anyone who writes/shares functions). Provides a simple, powerful and flexible way to check the arguments passed to functions. The developer can easily describe the type of argument needed. If the user provides a wrong argument, then an informative error message is prompted with the requested type and the problem clearly stated--saving the user a lot of time in debugging.
 
