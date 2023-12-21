@@ -1,5 +1,4 @@
 {% set version = "1.4.0" %}
-
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -21,19 +20,18 @@ build:
     - lib/R/lib/
     - lib/
 
-# Suggests: knitr, rmarkdown, stats, graphics
 requirements:
   build:
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
-
   host:
     - r-base
     - r-formula
-
+    - r-stringmagic
   run:
     - r-base
     - r-formula
+    - r-stringmagic
 
 test:
   commands:
@@ -45,13 +43,11 @@ about:
   license: GPL-3.0-only
   summary: Set of tools to facilitate package development and make R a more user-friendly place. Mostly for developers (or anyone who writes/shares functions). Provides a simple, powerful and flexible way to check the arguments passed to functions. The developer can easily describe the type of argument needed. If the user
     provides a wrong argument, then an informative error message is prompted with the requested type and the problem clearly stated--saving the user a lot of time in debugging.
-
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
-  feedstock-name: r-dreamerr
   recipe-maintainers:
     - conda-forge/r
     - izahn
