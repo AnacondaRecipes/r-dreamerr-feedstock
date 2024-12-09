@@ -46,6 +46,11 @@ about:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
+  anaconda-services:
+    ref: https://anaconda.zendesk.com/agent/tickets/58810
+    reason: Client request
+  recipe-maintainers:
+    - ianaobi
   recipe-maintainers:
     - conda-forge/r
     - izahn
